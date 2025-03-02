@@ -1,0 +1,13 @@
+name = "YauScape"
+uuid = "4cb3e412-1fa2-4c01-b24c-9b4d3fbfe773"
+authors = ["Eito Yoneyama"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1.6.7"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
