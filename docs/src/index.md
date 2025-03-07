@@ -11,6 +11,8 @@ Documentation for [YauScape](https://github.com/rice8y/YauScape.jl).
 ### 1. 3D Plot Generation:
 
 ```@eval
+using YauScape
+
 calabi_yau(3, 2/π)
 savefig("calabi_yau.png")
 ```
@@ -27,6 +29,8 @@ savefig("calabi_yau.png")
 ### 2. Time Evolution Animation:
 
 ```@eval
+using YauScape
+
 anim = calabi_yau_anim(2)
 gif(anim, "calabi_yau.gif", fps=15)
 ```
