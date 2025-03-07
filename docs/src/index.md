@@ -34,7 +34,7 @@ anim = calabi_yau_anim(2)
 gif(anim, "calabi_yau.gif", fps=15)
 ```
 
-!!! tip "Parameters of `calabi_yau_anim` function"
+!!! tip "Parameters"
 
     * `n::Int64`: Similar to the `calabi_yau` function, determines the complexity of the Calabi-Yau manifold and affects the intricacy of the shape in the animation.
     * `anim_res::Int64`: Specifies the number of frames in the animation. Higher values result in smoother animations but longer generation times.  **Note:** In `calabi_yau_anim`, `anim_res` is also used to set `grid_res`. Therefore, `anim_res` effectively controls both the number of animation frames and the grid resolution of the surfaces in each frame. Higher values for `anim_res` lead to smoother animation and more detailed surfaces but increase computation time.
