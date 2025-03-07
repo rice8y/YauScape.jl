@@ -10,7 +10,7 @@ Documentation for [YauScape](https://github.com/rice8y/YauScape.jl).
 
 ### 1. 3D Plot Generation:
 
-```@example
+```julia
 using YauScape
 
 calabi_yau(3, 2/π)
@@ -28,7 +28,7 @@ savefig("calabi_yau.png")
 
 ### 2. Time Evolution Animation:
 
-```@example
+```julia
 using YauScape
 
 anim = calabi_yau_anim(2)
