@@ -17,6 +17,8 @@ calabi_yau(3, 2/π)
 savefig("calabi_yau.png")
 ```
 
+![](assets/calabi_yau.png)
+
 !!! tip "Parameters"
     
     * `n::Int64`:  Determines the level of complexity in the Calabi-Yau manifold, influencing the number of patches used in its construction. Higher values of `n` result in more intricate surfaces.
@@ -33,6 +35,8 @@ using YauScape
 anim = calabi_yau_anim(2)
 gif(anim, "calabi_yau.gif", fps=15)
 ```
+
+![](assets/calabi_yau.gif)
 
 !!! tip "Parameters"
 
