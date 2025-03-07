@@ -51,11 +51,11 @@ function calabi_yau(n::Int, α::Float64; grid_res::Int64=50, color_palette::Symb
     return plt
 end
 
-function calabi_yau_anim(n::Int64; grid_res::Int64=50, anim_res::Int64=50, color_palette::Symbol=:rainbow, color=nothing)
+function calabi_yau_anim(n::Int64; anim_res::Int64=50, color_palette::Symbol=:rainbow, color=nothing)
     angles = LinRange(0, 2π, anim_res + 1)[1:end-1]
-    calabi_yau(n, angles[1], grid_res=grid_res, color_palette=color_palette, color=color)
+    calabi_yau(n, angles[1], grid_res=anim_res, color_palette=color_palette, color=color)
     anim = @animate for (i, α) in enumerate(angles)
-        calabi_yau(n, α, grid_res=grid_res, color_palette=color_palette, color=color)
+        calabi_yau(n, α, grid_res=anim_res, color_palette=color_palette, color=color)
     end
     return anim
 end
