@@ -13,7 +13,7 @@ Documentation for [YauScape](https://github.com/rice8y/YauScape.jl).
 ```julia
 using YauScape
 
-calabi_yau(3, 2/π)
+calabi_yau(3, π/2)
 savefig("calabi_yau.png")
 ```
 
